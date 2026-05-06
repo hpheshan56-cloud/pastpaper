@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Paper Hub | Heshan SD</title>
+    <style>
+        :root {
+            --primary-bg: #0f172a;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --accent-orange: #FF9900;
+        }
+
+        body {
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            background-color: var(--primary-bg);
+            color: white;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* HEADER & LOGO STYLE */
+        .header {
+            padding: 60px 20px;
+            text-align: center;
+            background: radial-gradient(circle, #1e293b 0%, #0f172a 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px; /* පින්තූරය සහ අකුරු අතර පරතරය */
+        }
+
+        .profile-photo {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--accent-orange);
+            box-shadow: 0 0 20px rgba(255, 153, 0, 0.4);
+        }
+
+        .logo {
+            font-size: 42px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .logo .part-one, .logo .part-two {
+            color: white;
+            margin-right: 10px;
+        }
+
+        .logo .part-three {
+            background-color: var(--accent-orange);
+            color: black;
+            padding: 2px 12px;
+            border-radius: 5px;
+        }
+
+        .subtitle {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #94a3b8;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* CONTENT CONTAINER */
+        .container {
+            max-width: 1000px;
+            margin: -30px auto 50px;
+            padding: 0 20px;
+        }
+
+        .stream-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--accent-orange);
+            padding-left: 15px;
+            color: #f8fafc;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .subject-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .subject-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+            border-color: var(--accent-orange);
+        }
+
+        .btn-external {
+            background: var(--accent-orange);
+            color: black;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .btn-external:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        .highlight { color: var(--accent-orange); }
+
+        /* Mobile Friendly */
+        @media (max-width: 600px) {
+            .logo { font-size: 30px; }
+            .logo-container { gap: 10px; }
+            .profile-photo { width: 55px; height: 55px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="heshan.jpg" alt="Heshan SD" class="profile-photo">
+            
+            <div class="logo">
+                <span class="part-one">PAST</span>
+                <span class="part-two">PAPER</span>
+                <span class="part-three">HUB</span>
+            </div>
+        </div>
+        <p class="subtitle">DOWNLOAD BY <span class="highlight">HESHAN SD</span></p>
+    </header>
+
+    <div class="container">
+        
+        <div class="stream-card">
+            <h2>Commerce Stream (වාණිජ අංශය)</h2>
+            <div class="grid">
+                <div class="subject-item">
+                    <span>Business Studies</span>
+                    <a href="https://govdoc.lk/category/past-papers/business-studies" target="_blank" class="btn-external">Get Paper</a>
+                </div>
+                <div class="subject-item">
+                    <span>Accounting</span>
+                    <a href="https://govdoc.lk/category/past-papers/accounting" target="_blank" class="btn-external">Get Paper</a>
+                </div>
+                <div class="subject-item">
+                    <span>Economics</span>
+                    <a href="https://govdoc.lk/category/past-papers/economics" target="_blank" class="btn-external">Get Paper</a>
+                </div>
+                <div class="subject-item">
+                    <span>ICT</span>
+                    <a href="https://govdoc.lk/page/gce-advanced-level-exam-information-and-communication-technology-ict-past-papers-sinhala" target="_blank" class="btn-external">Get Paper</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="stream-card">
+            <h2>Art Stream (කලා අංශය)</h2>
+            <div class="grid">
+                <div class="subject-item">
+                    <span>Media Studies</span>
+                    <a href="https://www.alevelapi.com/category/media-past-papers/" target="_blank" class="btn-external">Get Paper</a>
+                </div>
+                <div class="subject-item">
+                    <span>Geography</span>
+                    <a href="https://www.alevelapi.com/category/geography-past-papers/" target="_blank" class="btn-external">Get Paper</a>
+                </div>
+                <div class="subject-item">
+                    <span>Music</span>
+                    <a href="https://pastpapers.wiki/category/g-c-e-advanced-level/a-l-art/a-l-oriental-music/" target="_blank" class="btn-external">Get Paper</a>
+                <div class="subject-item">
+                    <span>sinhala/span>
+                    <a href="https://govdoc.lk/category/past-papers/gce-advance-level-exam" class="btn-external">Get Paper</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Crafted by <span class="highlight">Heshan S Dananjana</span>. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
